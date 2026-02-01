@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta name="viewport" content="width=devise-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Cyber Network Protect</title>
+        <link rel="stylesheet" th:href="@{/css/style.css}">
+    </head>
+    <body>
+        <div class="container">
+            <header class="app-header">
+                <img th:src="@{/images/cnp.jpg}" alt="Cyber Network Protect" class="logo">
+                <h1>Cyber Network Protect</h1>
+            </header>
+            <p class="subtitle">
+                Analysez un message ou un lien suspect pour détecter une arnaque.
+            </p>
+
+            <section class="card">
+                <h2>Scanner un message</h2>
+                <p class="hint">Exemple : "Urgent vous aves gagner un lot, cliquez ici..."</p>
+                <form id="messageForm">
+                    <textarea id="messageInput"
+                            placeholder="Collez ici le message reçu (SMS, WhatsApp, Facebook...)"
+                            required></textarea>
+
+                    <button type="submit">Analyser</button>
+                </form>
+
+                <div id="messageResult" class="result"></div>
+            </section>
+            
+            <section class="card">
+                <h2> Scanner un lien</h2>
+                <p class="hint">Exemple : "http://promo-orange.cm/gain"</p>
+                <form id="linkForm">
+                    <input type="url"
+                        id="linkInput"
+                        placeholder="https://exemple-suspect.com"
+                        required>
+
+                    <button type="submit">Scanner</button>
+                </form>
+
+                <div id="linkResult" class="result"></div>
+            </section>
+
+            <section class="card conseils">
+                <h2>Conseils de sécurité</h2>
+                <ul>
+                    <li>Ne cliquez jamais sur un lien reçu dans un message suspect</li>
+                    <li>Ne partagez jamais vos codes Mobile Money</li>
+                    <li>En cas de doute, contactez votre opérateur</li>
+                    <li>Verifiez l'adresse de l'expediteur avant tout transfert</li>
+                    <li>Mefiez vous des messages urgent promettant de l'argent ou en necessitant</li>
+                    <li>Ne partagez JAMAIS vos codes</li>
+                </ul>
+            </section>
+        </div>
+        <script th:src = "@{/js/script.js}" defer></script>
+    </body>
+    <footer class="footer">
+        <div class="footer-content">
+            <img th:src="@{/images/cnp.jpg}" alt="Cyber Network Protect" class="footer-logo">
+            <p>Cyber Network Protect - educatif et contre les arnaques numériques partout au Cameroun et ailleurs - Ensemble allons plus loin</p>
+        </div>
+    </footer>
+</html>
+<!--html lang="fr" xmls:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cyber Network Protect</title>
+        <link rel="stylesheet" th:href="@{/css/style.css}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Cybert Network Protect</h1>
+            <p class="subtitle">Analyse des liens et des messages suspects</p>
+
+        
+         <section class="card">
+            <h2> Scanner les liens</h2>
+            <form id="linkForm">
+                <input type="text" id="linkInput" placeholder="http://exemple.com" required>
+                <button type="submit">Scanner</button>
+            </form>
+            <div id="linkResult" class="result"></div>
+         </section>
+
+         
+         <section class="card">
+            <h2>Scanner un message</h2>
+            <form id="messageForm">
+                <textarea id="messageInput" placeholder="Copier ici le message reçu pour le scan" required></textarea>
+                <button type="submit">Analyser</button>
+            </form>
+            <div id="messageResult" class="result"></div>
+         </section>
+
+         
+         <section class="card">
+            <h2>Conseils de sécurité</h2>
+            <ul>
+                <li>Ne cliquez pas sur un lien suspect pour proteger vos données</li>
+                <li>Verifiez l'adresse de l'expediteur avant tout transfert</li>
+                <li>Mefiez vous des messages urgent promettant de l'argent ou en necessitant</li>
+                <li>Ne partagez JAMAIS vos codes</li>
+            </ul>
+         </section>
+        </div>
+        <script th:src="@{/js/script.js}" defer></script>
+    </body>
+</html-->
