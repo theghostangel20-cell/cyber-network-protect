@@ -5,7 +5,7 @@ document.getElementById("messageForm").addEventListener("submit", async function
 
     showLoading("messageResult");
 
-    const response = await fetch("http://localhost:8080/scan/message", {
+    const response = await fetch("/scan/message", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -25,7 +25,7 @@ document.getElementById("linkForm").addEventListener("submit", async function (e
 
     showLoading("linkResult");
 
-    const response = await fetch("http://localhost:8080/scan/link", {
+    const response = await fetch("/scan/link", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
