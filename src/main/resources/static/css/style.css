@@ -3,16 +3,9 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, #0f172a, #1e293b, #f1f5f9);
+    background-image: linear-gradient(to right, #3333, #CCC, #FFF);
     padding: 0;
     margin: 0;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 30px;
 }
 
 .container{
@@ -22,10 +15,7 @@ body {
 }
 
 h1 {
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    /*font-size: 36px 1.4rem;
+    font-size: /*36px*/ 1.4rem;
     margin: 0;
     /*font-family:'Times New Roman', Times, serif;
     text-align: center;
@@ -49,10 +39,10 @@ h3 {
 
 .card {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 18px;
     margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .card h2 {
@@ -75,9 +65,9 @@ textarea {
     width: 100%;
     padding: 12px;
     margin-top: 10px;
-    border-radius: 8px;
-    border: 1px solid #cbd5e1;
-    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
     /*min-height: 100px;*/
 }
 
@@ -90,17 +80,17 @@ button {
     padding: 12px;
     width: 100%;
     border: none;
-    border-radius: 8px;
-    background: #2563eb; 
+    border-radius: 6px;
+    background-color: #0d6efd; 
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     min-height: 48px;
 }
 
 button:hover {
-    background: #1d4ed8;
+    background: #0b5ed7;
 }
 
 .result {
@@ -149,14 +139,11 @@ button:hover {
 }
 
 @media (min-width: 768px) {
-    body {
-        padding: 15px;
-    }
     h1 {
         font-size: 1.8rem;
     }
-    .card {
-        padding: 15px;
+    .card h2 {
+        font-size: 1.3rem;
     }
 }
 
