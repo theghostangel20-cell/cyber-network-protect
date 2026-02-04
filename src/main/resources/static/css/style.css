@@ -3,7 +3,7 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, #3333, #CCC, #FFF);
+    background-image: linear-gradient(to right, #55535333, #5e5a5a, #FFF);
     padding: 0;
     margin: 0;
 }
@@ -26,7 +26,7 @@ h3 {
     font-family:'Times New Roman', Times, serif;
     font-size: 48px;
     text-align: center;
-    color: linear-gradient(to left, #3333, #CCC, #FFF);
+    color: linear-gradient(to left, #0f172a, #CCCC, #FFF);
 }
 
 .subtitle {
