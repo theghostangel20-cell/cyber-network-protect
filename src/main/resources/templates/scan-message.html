@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Scanner un message - Cyber Network Protect</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        
+        <!-- en tete -->
+        <header class="header">
+            <div class="header-left">
+                <img src="/images/cnp.png" alt="Logo" class="logo">
+                <span class="site-name">Cyber Network Protect</span>
+            </div>
+            <nav class="header-nav">
+                <a th:href="@{/}">Acceuil</a>
+                <a th:href="@{/scan-lien}">Scanner un lien</a>
+                <a th:href="@{/scan-message}" class="active">Scanner un message</a>
+                <a th:href="@{/conseils}">Conseils</a>
+            </nav>
+        </header>
+
+        <!-- Section de l'introduction -->
+        <section class="section section-intro">
+            <h1>Scanner un message</h1>
+            <p>Les arnaques utilisent le plus souvent des messages pour pousser à agir rapidement. Colle ici le message reçu pour analyser son contenu</p>
+        </section>
+
+        <!-- section du formulaire -->
+        <section class="section section-form">
+            <form id="messageForm">
+                <label for="messageInput">Collez ici le message reçu (SMS, WhatsApp, Facebook...) pour analyse</label>
+                <textarea id="messageInput" rows="6" placeholder="Ex : félicitation vous avez gagné un prix..." required></textarea>
+                <button type="submit">Analyser le message</button>
+            </form>
+
+            <!-- resultat -->
+            <div id="messageResult" class="result"></div>
+        </section>
+
+        <!-- conseils rapides -->
+        <section class="section section-conseils">
+            <h2>Conseils rapides</h2>
+            <ul>
+                <li>Mefie-toi des messages urgents ou trop alléchants.</li>
+                <li>Ne partage JAMAIS tes codes ou mots de passe.</li>
+                <li>les arnaques utilisent souvent tes fautes ou un ton pressant.</li>
+            </ul>
+        </section>
+
+        <!-- bas de page -->
+        <footer class="footer">
+            <p>
+                <img src="/images/cnp.png" alt="Logo" class="footer-logo">
+                Cyber Network Protect - Site éducatif contre les arnaques numeriques au Cameroun - Esemble allons plus loin
+            </p>
+        </footer>
+        <script src="/js/script.js" defer></script>
+    </body>
+</html>

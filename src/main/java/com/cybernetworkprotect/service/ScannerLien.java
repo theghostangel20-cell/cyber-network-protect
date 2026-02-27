@@ -70,7 +70,7 @@ public class ScannerLien {
         String[] suspiciousDomains = {
             ".xyz", ".html", "reg?", "register",
             "exemple", "signup?", "free",
-            "gift", "win", "promo"
+            "gift", "win", "promo", "exemple-suspect"
         };
         for (String s : suspiciousDomains){
             if (lower.contains(s)) {

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Conseils de securité - Cyber Network Protect</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+
+        <!-- En tete -->
+        <header class="header">
+            <div class="header-left">
+                <img src="/images/cnp.png" alt="Logo" class="logo">
+                <span class="site-name">Cyber Network Protect</span>
+            </div>
+            <nav class="header-nav">
+                <a th:href="@{/}">Acceuil</a>
+                <a th:href="@{/scan-lien}">Scanner un lien</a>
+                <a th:href="@{/scan-message}">Scanner un message</a>
+                <a th:href="@{/conseils}">Conseils</a>
+            </nav>
+        </header>
+
+        <!-- section introduction -->
+        <section class="section section-intro">
+            <h1>Conseils de sécurité numerique</h1>
+            <p>Adopter les bons reflexes est la meilleure protection contre les arnaques numeriques. Voici des conseils simples mais efficaces adaptés au contexte de la securité numérique</p>
+        </section>
+
+        <!--conseils-->
+        <section class="section section-conseils">
+            <article class="conseil">
+                <h2>Arnaques Mobile/Orange Money</h2>
+                <p>Les fraudeurs se font passer pour des agents MTN ou ORANGE et demandent des codes ou des remboursements.</p>
+                <ul>
+                    <li>Ne partage JAMAIS ton code secret</li>
+                    <li>Les opérateurs ne demandent jamais votre code secret par message.</li>
+                    <li>IMPORTANT : En cas de doute appelle le service client</li>
+                </ul>
+            </article>
+
+            <article class="conseil">
+                <h2>Chantage sentimental</h2>
+                <p>Certaines personnes gagnent ta confiance puis te demandent de l'argent</p>
+                <ul>
+                    <li>Mefie-toi des relations trop rapides</li>
+                    <li>Ne partages jamais tes photos en privées</li>
+                    <li>Parle à un proche si tu te sens sous pression</li>
+                </ul>
+            </article>
+
+            <article class="conseil">
+                <h2>Physhing et faux liens</h2>
+                <p>Les liens frauduleux imitent des sites officiels pour voler tes informations</p>
+                <ul>
+                    <li>Vérifie toujours l'adresse du site avant de cliquer deçu</li>
+                    <li>Mefie-toi des liens raccourcis</li>
+                    <li>Analyse le lien avant de cliquer deçu pour plus de securité</li>
+                </ul>
+            </article>
+
+            <article class="conseil">
+                <h2>Que faire si tu es victime ?</h2>
+                <ul>
+                    <li>Contacte immediatement ton operateur</li>
+                    <li>change tes mots de passe</li>
+                    <li>Signale l'arnaque à la police ou aux autorités compétentes</li>
+                </ul>
+            </article>
+
+        </section>
+
+        <!-- pas de page -->
+        <footer class="footer">
+            <p>
+                <img src="/images/cnp.png" alt="Logo" class="footer-logo">
+                Cyber Network Protect - Site éducatif contre les arnaques numériques au Cameroun - Ensemble allons plus loin
+            </p>
+        </footer>
+
+    </body>
+</html>

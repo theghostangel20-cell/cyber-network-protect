@@ -5,6 +5,8 @@ public class ScanResult {
     private String level;
     private String message;
 
+    public ScanResult(){}
+
     public ScanResult(String level, String message){
         this.level = level;
         this.message = message;

@@ -1,5 +1,75 @@
 <!DOCTYPE html>
-<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<html lang="fr">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Cyber Network Protect</title>
+        <meta name="viewport" content="width=devise-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <!--En tete du site-->
+        <header class="header">
+            <div class="header-left">
+                <img src="/images/cnp.png" alt="Logo" class="logo">
+                <span class="site-name">Cyber Network Protect</span>
+            </div>
+
+            <nav class="header-nav">
+                <a th:href="@{/}">Acceuil</a>
+                <a th:href="@{/scan-lien}">Scanner un lien</a>
+                <a th:href="@{/scan-message}">Scanner un message</a>
+                <a th:href="@{/conseils}">Conseils</a>
+            </nav>
+        </header>
+
+        <!--Section de l'introduction-->
+        <section class="section section-intro">
+            <h1>Se protéger contre les arnaques numeriques avec CNP</h1>
+            <p>
+                Cyber Network Protect (CNP) est un site mis sur pied pour aider au mieux les citoyens à détecter les arnaques (physhing, vole de donnée personnelle, fausse plateforme d'investissement, etc...) cachées derrière des messages et liens courant dans le monde du numeriques au Cameroun et ailleurs. Ainsi vous pouvez Analyser un lien, un message reçu et apprendre les bons réflexes de sécurité sur notre page conseils.
+            </p>
+        </section>
+        <!--Section choix-->
+        <section class="section section-actions">
+            <div class="action-box">
+                <h2>Scanner un lien</h2>
+                <p>
+                    Ici verifiez un lien reçu par SMS, WhatsApp ou email avant de cliquer deçu.
+                </p>
+                <a th:href="@{/scan-lien}" class="btn">Scanner un lien</a>
+            </div>
+
+            <div class="action-box">
+                <h2>Scanner un message</h2>
+                <p>
+                    Ici analysez un message suspect pour detecter une tentative d'arnaque ou de physhing.
+                </p>
+                <a th:href="@{/scan-message}" class="btn">Scanner un message</a>
+            </div>
+
+            <div class="action-box">
+                <h2>Conseils</h2>
+                <p>
+                    Ici découvrez les bons reflexes pour eviter les pièges numeriques.
+                </p>
+                <a th:href="@{/conseils}" class="btn">Voir les conseils</a>
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>
+                <img src="/images/cnp.png" alt="Logo" class="footer-logo">
+                Cyber Network Protect - Site éducatif contre les arnaques numeriques au cameroun - Ensemble allons plus loin
+            </p>
+        </footer>
+    </body>
+</html>
+<!--html lang="fr" xmlns:th="http://www.thymeleaf.org">
     <head>
         <meta name="viewport" content="width=devise-width, initial-scale=1.0">
         <meta charset="UTF-8">
@@ -65,49 +135,4 @@
             <p>Cyber Network Protect - educatif et contre les arnaques numériques partout au Cameroun et ailleurs - Ensemble allons plus loin</p>
         </div>
     </footer>
-</html>
-<!--html lang="fr" xmls:th="http://www.thymeleaf.org">
-    <head>
-        <meta charset="UTF-8">
-        <title>Cyber Network Protect</title>
-        <link rel="stylesheet" th:href="@{/css/style.css}">
-    </head>
-    <body>
-        <div class="container">
-            <h1>Cybert Network Protect</h1>
-            <p class="subtitle">Analyse des liens et des messages suspects</p>
-
-        
-         <section class="card">
-            <h2> Scanner les liens</h2>
-            <form id="linkForm">
-                <input type="text" id="linkInput" placeholder="http://exemple.com" required>
-                <button type="submit">Scanner</button>
-            </form>
-            <div id="linkResult" class="result"></div>
-         </section>
-
-         
-         <section class="card">
-            <h2>Scanner un message</h2>
-            <form id="messageForm">
-                <textarea id="messageInput" placeholder="Copier ici le message reçu pour le scan" required></textarea>
-                <button type="submit">Analyser</button>
-            </form>
-            <div id="messageResult" class="result"></div>
-         </section>
-
-         
-         <section class="card">
-            <h2>Conseils de sécurité</h2>
-            <ul>
-                <li>Ne cliquez pas sur un lien suspect pour proteger vos données</li>
-                <li>Verifiez l'adresse de l'expediteur avant tout transfert</li>
-                <li>Mefiez vous des messages urgent promettant de l'argent ou en necessitant</li>
-                <li>Ne partagez JAMAIS vos codes</li>
-            </ul>
-         </section>
-        </div>
-        <script th:src="@{/js/script.js}" defer></script>
-    </body>
 </html-->

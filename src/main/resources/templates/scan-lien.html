@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Scanner un lien - Cyber Network Protect</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-left">
+                <img src="/images/cnp.png" alt="Logo" class="logo">
+                <span class="site-name">Cyber Network Protect</span>
+            </div>
+
+            <nav class="header-nav">
+                <a th:href="@{/}">Acceuil</a>
+                <a th:href="@{/scan-lien}" class="active">Scanner un lien</a>
+                <a th:href="@{/scan-message}">Scanner un message</a>
+                <a th:href="@{/conseils}">Conseils</a>
+            </nav>
+        </header>
+
+        <!-- section introduction -->
+        <section class="section section-intro">
+            <h1>Scanner un lien</h1>
+            <p>Les liens frauduleux sont souvent utilisés pour voler des informations ou de l'argent. Avant de cliquer sur un lien reçu par SMS, WhatsApp, Email etc..., Analysez-le ici pour avoir une idée du type de lien que vous avez reçu et comment se comporter devant une telle situation</p>
+        </section>
+
+        <!-- section formulaire -->
+        <section class="section section-form">
+            <label for="linkInput">Mets ici le lien ou raccourcis que tu souhaite analyser</label>
+            <form id="linkForm">
+                <input type="url" id="linkInput" placeholder="https://exemple-suspect.com" required>
+
+                <button type="submit">Scanner</button>
+            </form>
+
+            <div id="linkResult" class="result"></div>
+        </section>
+        <!--section class="section section-form">
+            <form id="linkForm">
+                <label for="linkInput">
+                    Colle ou copie le lien ici à analyser
+                </label>
+                <input type="url" id="linkInput" placeholder="Ex : https://exemple.com" required>
+                <button type="submit">Analyser le lien</button>
+            </form-->
+
+            <!-- resultat -->
+            <!--div id="linkResult" class="result"></div>
+        </section-->
+
+        <!-- Section conseils rapides -->
+        <section class="section section-conseils">
+            <h2>Conseils Rapides</h2>
+                <ul>
+                    <li>Ne clique jamais sur un lien qui n'es pas fiable</li>
+                    <li>Mefie toi des liens raccourcis</li>
+                    <li>Les arnaques utilisent souvent les urgences ou la peur</li>
+                </ul>
+        </section>
+
+        <footer class="footer">
+            <p>
+                <img src="/images/cnp.png" alt="Logo" class="footer-logo">
+                Cyber Network Protect - Site éducatif contre les arnaques au Cameroun - Ensemble allons plus loin
+            </p>
+        </footer>
+        <script src= "/js/script.js" defer></script>
+    </body>
+</html>

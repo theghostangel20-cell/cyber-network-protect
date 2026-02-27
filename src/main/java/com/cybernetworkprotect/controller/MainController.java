@@ -4,6 +4,7 @@ import com.cybernetworkprotect.model.ScanResult;
 import com.cybernetworkprotect.model.ScanRequest;
 import com.cybernetworkprotect.service.ScannerLien;
 import com.cybernetworkprotect.service.ScannerMessage;
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
