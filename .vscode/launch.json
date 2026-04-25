@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CyberNetworkProtectApplication<cyber-network-protect>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cybernetworkprotect.CyberNetworkProtectApplication",
+            "projectName": "cyber-network-protect",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
